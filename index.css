@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-size: cover;
+    color: navy;
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./multi-step-form-main/assets/fonts/Ubuntu-Regular.ttf');
+}
+.main-div{
+    font-family: 'Ubuntu';
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 10px;
+}
+.first-div{
+    display: grid;
+    flex-direction: column;
+    margin: 8%;
+    line-height: 1.5;
+    justify-content: space-between;
+}
+.first-div h1, h3{
+    display: flex;
+    justify-content: start;
+    margin: 0px 50px;
+    font-weight: lighter;
+}
+.first-div h1{
+    font-family: 'Ubuntu';
+    font-weight: bolder;
+}
+.list{
+    font-family: "Ubuntu";
+    display: grid;
+    flex-direction: column;
+}
+.input{
+    width: 80%;
+    height: 50%;
+}
+.arcade{
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 20px 70px;
+}
+.arcade h2{
+    display: flex;
+}
+.advanced{
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 20px 70px;
+}
+.advanced h2{
+    display: flex;
+}
+.pro{
+    border-radius: 5px;
+    flex-direction: column;
+    margin: 20px 70px;
+}
+.pro h2{
+    display: flex;
+}
+.second-div{
+    width: 100%;
+    height: 100%;
+    margin: 10% 10%;
+    padding: 5%;
+    font-family: "Ubuntu-Regular";
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    background-image: url('./multi-step-form-main/assets/images/bg-sidebar-desktop.svg');
+}
+.step-1{
+    margin: 10% 10%;
+}
+.btn{
+    font-family: 'Ubuntu';
+    width: 86%;
+    margin: 4%;
+    height: 50px;
+    margin: 50px;
+}
+.foot-btn{
+    margin-left: 235%;
+    color: white;
+    width: 30%;
+    height: 80%;
+    background-color: navy;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+}
+.circle {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 30px;
+    height: 25px;
+    padding: 0px;
+    background: #483EFF;
+    margin: px;
+    color: white;
+    text-align: center;
+    font: 20px Arial, sans-serif;
+  }
+  #circle2{
+    color: #483EFF;
+    background-color: white;
+  }
+  .step{
+    display: flex;
+    margin: 20px 20px;
+  }
+  .step-style{
+    display: flex;
+    flex-direction: column;
+    margin: 1px 20px;
+    margin-bottom: 0%;
+  }
+  .step-style h5{
+    color: white;
+  }
+
+.select{
+    margin: 0px 15px;
+}
+.arcade1{
+    display: none;
+}
+.advanced1{
+    display: none;
+}
+.pro1{
+    display: none;
+}
+.select-second{
+    display: none;
+}
+.month-tag{
+    display: none;
+}
+.footer{
+    display: none;
+}
+.next-btn{
+    color: white;
+    background: navy;
+    width: 30%;
+    margin: 0px 2%;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 236%;
+    cursor: pointer;
+}
+@media (max-width: 990px) {
+    body{
+        background-image: url("./multi-step-form-main/assets/images/bg-sidebar-mobile.svg");
+        height: 18vh;
+        background: cover;
+        background-repeat: no-repeat;
+    }
+    .select-second{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .month-tag{
+        border-radius: 3px;
+        width: 95%;
+        margin: 2% 0px;
+        height: 70%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color:darkgrey;    
+    }
+    .second-div{
+        display: flex;
+        border: none;
+        width: auto;
+    }
+    .step{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        margin: 0px;
+    }
+    .step.circle{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-div{
+        margin: 0% 8%;
+        display: flex;
+        flex-direction: column;
+    }
+    .step-style{
+        display: none;
+    }
+    .first-div{
+        background-color: white;
+        border-radius: 10px;
+        border: 5px solid gray;
+        justify-content: center;
+    }
+    .select-first{
+        display: none;
+    }
+    .select{
+        margin: 3% 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .list{
+        margin: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .arcade1{
+        border: 1px purple solid;
+        display: flex;
+        border-radius: 5px;
+        width: 80%;
+        margin: 3% 5px;
+    }
+    .arcade2{
+        margin: 0px 3%;
+        align-items: center;
+    }
+    .arcade2 h3{
+        display: flex;
+        margin: 0px;
+    }
+    .advanced1{
+        border: 1px purple solid;
+        display: flex;
+        border-radius: 5px;
+        width: 80%;
+        margin: 3% 5px;
+    }
+    .advanced2{
+        margin: 0px 3%;
+        align-items: center;
+        
+    }
+    .advanced2 h3{
+        display: flex;
+        margin: 0px;
+    }
+    .advanced{
+        display: none;
+    }
+    .pro1{
+        border: 1px purple solid;
+        display: flex;
+        border-radius: 5px;
+        width: 80%;
+        margin: 3% 5px;
+    }
+    .pro2{
+        margin: 0px 3%;
+        align-items: center;
+    }
+    .pro2 h3{
+        display: flex;
+        margin: 0px;
+    }
+    .arcade{
+        display: none;
+        width: 50%;
+        padding: 0%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .pro{
+        display: none;
+    }
+    .next-btn{
+        color: white;
+        background: navy;
+        width: 30%;
+        margin: 0px 2%;
+        height: 40px;
+        display: flex;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .footer-btn{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .footer{
+        cursor: pointer;
+        display: flex;
+    }
+}
